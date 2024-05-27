@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Mutasi</title>
+    <link rel="stylesheet" href="/style/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body class="bg-[#CED0FF]">
+    <header
+      class="bg-gradient-to-r from-[#293676] to-[#4D4196] text-white font-bold flex flex-col md:flex-row items-center justify-between px-8 py-4 gap-4"
+    >
+      <img src="/images/logo.png" alt="logo" />
+      <button class="md:hidden">☰</button>
+      <nav
+        class="hidden md:flex flex-col sm:flex-row flex-grow items-center justify-around gap-2"
+      >
+        <a class="text-center" href="/">Home</a>
+        <a class="text-center" href="/home.html">Denah Rotasi</a>
+        <a class="text-center" href="/rotasi.html">Input Personal (IP)</a>
+        <a class="text-center" href="/bandara.html">Selektif Admin</a>
+        <a class="text-center" href="#">Akun</a>
+        <a class="text-center" href="#">Logout</a>
+      </nav>
+    </header>
+    <main>
+      <section class="flex flex-col-reverse md:flex-row m-4 gap-4 md:h-screen">
+        <aside
+          class="md:max-w-[50%] flex-grow flex flex-col gap-2 bg-white text-[#474747] border-2 border-[#DEDEDE] rounded-xl p-2 h-[50vh] md:h-full overflow-y-auto"
+        >
+          <button
+            class="bg-[#D6D6D6] px-8 py-3 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-2"
+          >
+            <aside class="flex flex-col items-center sm:items-start">
+              <h3 class="font-semibold text-lg">Nama Personel</h3>
+              <p>ID_12345</p>
+            </aside>
+            <aside class="flex items-center gap-4">
+              <h4 class="font-semibold">Cabang 1</h4>
+              <img src="/images/Arrow.svg" alt="arrow" />
+              <h4 class="font-semibold">Cabang 2</h4>
+            </aside>
+          </button>
+          <button
+            class="bg-[#D6D6D6] px-8 py-3 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-2"
+          >
+            <aside class="flex flex-col items-center sm:items-start">
+              <h3 class="font-semibold text-lg">Nama Personel</h3>
+              <p>ID_12345</p>
+            </aside>
+            <aside class="flex items-center gap-4">
+              <h4 class="font-semibold">Cabang 1</h4>
+              <img src="/images/Arrow.svg" alt="arrow" />
+              <h4 class="font-semibold">Cabang 2</h4>
+            </aside>
+          </button>
+          <button
+            class="bg-[#D6D6D6] px-8 py-3 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-2"
+          >
+            <aside class="flex flex-col items-center sm:items-start">
+              <h3 class="font-semibold text-lg">Nama Personel</h3>
+              <p>ID_12345</p>
+            </aside>
+            <aside class="flex items-center gap-4">
+              <h4 class="font-semibold">Cabang 1</h4>
+              <img src="/images/Arrow.svg" alt="arrow" />
+              <h4 class="font-semibold">Cabang 2</h4>
+            </aside>
+          </button>
+          <button
+            class="bg-[#D6D6D6] px-8 py-3 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-2"
+          >
+            <aside class="flex flex-col items-center sm:items-start">
+              <h3 class="font-semibold text-lg">Nama Personel</h3>
+              <p>ID_12345</p>
+            </aside>
+            <aside class="flex items-center gap-4">
+              <h4 class="font-semibold">Cabang 1</h4>
+              <img src="/images/Arrow.svg" alt="arrow" />
+              <h4 class="font-semibold">Cabang 2</h4>
+            </aside>
+          </button>
+        </aside>
+        <form
+          class="md:max-w-[50%] flex-grow flex flex-col gap-4 bg-white text-[#474747] border-2 border-[#DEDEDE] rounded-xl px-8 py-4 md:h-full overflow-y-auto"
+        >
+          <div
+            class="flex flex-col gap-2 sm:flex-row items-center justify-between"
+          >
+            <button
+              class="bg-[#6E88CA] text-white px-6 py-2 font-semibold rounded-lg"
+              type="submit"
+            >
+              Submit
+            </button>
+            <h1 class="font-bold text-2xl">Deskripsi</h1>
+            <aside
+              class="flex flex-col items-center sm:items-end font-semibold"
+            >
+              <p>Tanggal Pengajuan</p>
+              <p>20-09-2029</p>
+            </aside>
+          </div>
+          <hr class="w-full border-2 border-[#B6B6B6]" />
+          <div>
+            <label class="font-semibold" for="nama">Nama</label>
+            <input
+              class="w-full border-2 border-[#B6B6B6] px-2 py-1 mt-1 bg-[#C6C6C6]"
+              type="text"
+              id="nama"
+              name="nama"
+              value="Adiyatma Yudha Negara"
+              disabled
+            />
+          </div>
+          <div>
+            <label class="font-semibold" for="nik">NIK</label>
+            <input
+              class="w-full border-2 border-[#B6B6B6] px-2 py-1 mt-1 bg-[#C6C6C6]"
+              type="text"
+              id="nik"
+              name="nik"
+              value="023091092381209381"
+              disabled
+            />
+          </div>
+          <div>
+            <label class="font-semibold">Status Pemindahan</label><br />
+            <input type="radio" name="status" id="dapat" value="dapat" />
+            <label for="dapat">Dapat Pemindahan</label><br />
+            <input type="radio" name="status" id="tidak_dapat" value="tidak" />
+            <label for="tidak_dapat">Tidak Dapat Pemindahan</label>
+          </div>
+          <div>
+            <label class="font-semibold" for="keterangan"
+              >Keterangan Penolakan</label
+            >
+            <textarea
+              name="keterangan"
+              id="keterangan"
+              placeholder="Ketik Disini ..."
+              class="w-full border-2 border-[#B6B6B6] px-2 py-1 mt-1"
+              rows="5"
+            ></textarea>
+          </div>
+          <div>
+            <label class="font-semibold" for="rekomendasi">Rekomendasi</label>
+            <textarea
+              name="rekomendasi"
+              id="rekomendasi"
+              placeholder="Ketik Disini ..."
+              class="w-full border-2 border-[#B6B6B6] px-2 py-1 mt-1"
+              rows="5"
+            ></textarea>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer
+      class="bg-gradient-to-r from-[#293676] to-[#4D4196] text-white flex flex-col md:flex-row items-center md:items-start justify-between gap-8 p-4"
+    >
+      <aside class="md:max-w-[33%] flex-grow flex flex-col gap-2">
+        <h2 class="font-bold text-center">KONTAK</h2>
+        <p class="text-center md:text-left">
+          Jl. Adi Sucipto No.KM.12, Pinang Kencana, Kec. Tanjungpinang Tim.,
+          Kota Tanjung Pinang, Kepulauan Riau 29125
+        </p>
+        <ul class="flex flex-col items-center md:items-start">
+          <li>Telp: 0771-7335581</li>
+          <li>Email: airnavtnj@gmail.com</li>
+        </ul>
+      </aside>
+      <aside
+        class="md:max-w-[33%] flex-grow md:flex-grow-0 flex flex-col items-center md:items-start gap-2"
+      >
+        <h2 class="font-bold text-center md:text-right">LAYANAN</h2>
+        <ul
+          class="md:ms-4 flex flex-col items-center md:items-start md:[&_li]:list-disc"
+        >
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Artikel</a></li>
+          <li><a href="#">Pembelajaran</a></li>
+          <li><a href="#">Organisasi Cabang</a></li>
+          <li><a href="#">Akun</a></li>
+        </ul>
+      </aside>
+      <img class="md:max-w-[34%] flex-grow" src="/images/logo.png" alt="logo" />
+    </footer>
+    <script src="/script/nav.js"></script>
+  </body>
+</html>
