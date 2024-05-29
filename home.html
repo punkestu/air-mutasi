@@ -18,11 +18,11 @@
       crossorigin=""
     ></script>
   </head>
-  <body>
+  <body class="bg-[#CED0FF] font-poppins">
     <header
-      class="bg-gradient-to-r from-[#293676] to-[#4D4196] text-white font-bold flex flex-col md:flex-row items-center justify-between px-8 py-4 gap-4"
+      class="bg-[#293676] text-[#D2D2D2] font-bold flex flex-col md:flex-row items-center justify-between px-8 py-4 gap-4 fixed top-0 left-0 z-50 w-full"
     >
-      <img src="/images/logo.png" alt="logo" />
+      <img src="/images/logo.svg" alt="logo" />
       <button class="md:hidden">☰</button>
       <nav
         class="hidden md:flex flex-col sm:flex-row flex-grow items-center justify-around gap-2"
@@ -37,9 +37,9 @@
     </header>
     <main>
       <section class="h-[50vh] md:h-screen w-full">
-        <div id="map" class="w-full h-full"></div>
+        <div id="map" class="w-full h-full z-40"></div>
       </section>
-      <section class="bg-[#CED0FF] p-4 flex flex-col gap-2">
+      <section class="p-4 flex flex-col gap-2 bg-[#29367688]">
         <input
           class="border-[6px] rounded-xl px-2 py-1 border-[#293676]"
           type="text"
@@ -47,7 +47,7 @@
         />
         <section class="flex flex-col-reverse sm:flex-row gap-2 max-h-[50vh]">
           <aside
-            class="bg-gradient-to-r from-[#293676] to-[#4D4196] sm:max-w-[50%] flex-grow text-[#474747] p-2 rounded-xl flex flex-col gap-2 overflow-y-auto"
+            class="bg-[#293676] sm:max-w-[50%] flex-grow text-[#474747] p-2 rounded-xl flex flex-col gap-2 overflow-y-auto"
           >
             <a
               href="/cabang.html"
@@ -100,7 +100,7 @@
             </a>
           </aside>
           <aside
-            class="bg-gradient-to-r from-[#293676] to-[#4D4196] sm:max-w-[50%] flex-grow text-[#474747] p-2 rounded-xl flex flex-col gap-2 overflow-y-auto"
+            class="bg-[#293676] sm:max-w-[50%] flex-grow text-[#474747] p-2 rounded-xl flex flex-col gap-2 overflow-y-auto"
           >
             <div
               class="flex items-center justify-center bg-white min-h-40 rounded-lg"
@@ -118,7 +118,7 @@
       </section>
     </main>
     <footer
-      class="bg-gradient-to-r from-[#293676] to-[#4D4196] text-white flex flex-col md:flex-row items-center md:items-start justify-between gap-8 p-4"
+      class="bg-[#293676] text-white flex flex-col md:flex-row items-center md:items-start justify-between gap-8 p-8"
     >
       <aside class="md:max-w-[33%] flex-grow flex flex-col gap-2">
         <h2 class="font-bold text-center">KONTAK</h2>
@@ -145,7 +145,7 @@
           <li><a href="#">Akun</a></li>
         </ul>
       </aside>
-      <img class="md:max-w-[34%] flex-grow" src="/images/logo.png" alt="logo" />
+      <img class="md:max-w-[34%] flex-grow" src="/images/logo.svg" alt="logo" />
     </footer>
     <script src="/script/nav.js"></script>
     <script src="/script/map.js"></script>
